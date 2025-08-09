@@ -1,28 +1,130 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Start - CGAI</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="https://s3.tradingview.com/tv.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Start – CGAI</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- TradingView nur geladen, falls Chart-Container vorhanden -->
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script defer src="js/app.js"></script>
 </head>
-<body onload="if(document.getElementById('chart')) loadChart();">
-<header>
-    <img src="assets/logo.svg" alt="CGAI Logo" height="50">
-    <nav>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="assets/logo.svg" alt="CGAI Logo" height="44" />
+        <strong style="letter-spacing:.4px">CGAI</strong>
+      </div>
+      <nav>
         <a href="index.html">Start</a>
         <a href="mindset.html">Mindset</a>
         <a href="krypto.html">Krypto</a>
-        <a href="ueber-uns.html">Über uns</a>
-    </nav>
-</header>
-<div class="container">
-<h1>Willkommen bei CGAI</h1><p>High-End Krypto Navigationssystem.</p>
-</div>
-<footer>
-    <p>© 2025 CGAI - Alle Rechte vorbehalten</p>
-</footer>
-<script src="js/app.js"></script>
+        <a href="ueber-uns.html">Über&nbsp;uns</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / MANIFEST -->
+  <section class="container" style="padding-top:32px;">
+    <p class="kicker" style="color:#D4AF37;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin:0 0 6px;">
+      Manifest
+    </p>
+    <h1>Wir setzen den Standard für klare Entscheidungen im Kryptomarkt.</h1>
+    <p class="lead" style="max-width:62ch;">
+      Klare Regeln, geprüfte Informationen, strategisches Handeln – ohne FOMO. Disziplin vor Hype.
+    </p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 4px;">
+      <a class="btn" style="background:#D4AF37;color:#0A0B0D" href="mindset.html">Unser Mindset lesen</a>
+      <a class="btn" style="background:transparent;border:1px solid #1C222B" href="ueber-uns.html">Über uns</a>
+    </div>
+  </section>
+
+  <!-- WERTE -->
+  <section>
+    <div class="container" style="display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr));">
+      <div class="product">
+        <h2 style="margin:0 0 6px">Transparenz</h2>
+        <p style="margin:0;color:#A7B0BE;">Methodik, Daten & Grenzen – offen dokumentiert.</p>
+      </div>
+      <div class="product">
+        <h2 style="margin:0 0 6px">Präzision</h2>
+        <p style="margin:0;color:#A7B0BE;">Jede Aussage mit Begründung und Kontext.</p>
+      </div>
+      <div class="product">
+        <h2 style="margin:0 0 6px">Verlässlichkeit</h2>
+        <p style="margin:0;color:#A7B0BE;">Regeln & Prozesse statt Laune und Lärm.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEITEN-TEASER -->
+  <section>
+    <div class="container" style="display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr));">
+      <a class="product" href="mindset.html" style="display:block;text-decoration:none;">
+        <h2>Mindset</h2>
+        <p style="color:#A7B0BE;">Unser Regelwerk gegen Hype & Panik. Platz für längere Texte und PDFs.</p>
+        <span class="btn" style="margin-top:8px;display:inline-block;background:transparent;border:1px solid #1C222B;color:#F5F7FA">Mehr</span>
+      </a>
+
+      <a class="product" href="krypto.html" style="display:block;text-decoration:none;">
+        <h2>Krypto</h2>
+        <p style="color:#A7B0BE;">Live‑Chart des Gesamtmarkts seit 2010. Zugang zu Trader / Investor / Anfänger.</p>
+        <span class="btn" style="margin-top:8px;display:inline-block;background:transparent;border:1px solid #1C222B;color:#F5F7FA">Zum Bereich</span>
+      </a>
+
+      <a class="product" href="ueber-uns.html" style="display:block;text-decoration:none;">
+        <h2>Über uns</h2>
+        <p style="color:#A7B0BE;">Gesichter, Verantwortung, Datenschutz & Governance.</p>
+        <span class="btn" style="margin-top:8px;display:inline-block;background:transparent;border:1px solid #1C222B;color:#F5F7FA">Team ansehen</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- BLOG / TRANSPARENZ TEASER -->
+  <section>
+    <div class="container" style="display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));">
+      <div class="product">
+        <h2>Blog</h2>
+        <p class="lead" style="margin:6px 0 12px">Research‑Notizen & Marktpsychologie.</p>
+        <ul style="margin:0 0 8px 18px">
+          <li>Warum Regeln Gewinne schützen</li>
+          <li>FOMO vs. Geduld – ein Framework</li>
+        </ul>
+      </div>
+      <div class="product">
+        <h2>Transparenz</h2>
+        <p style="color:#A7B0BE;">Methodik, Datenquellen & Limitierungen klar erklärt.</p>
+        <a class="btn" style="background:transparent;border:1px solid #1C222B;color:#F5F7FA" href="transparenz.html">Mehr erfahren</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container" style="display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr));">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="assets/logo.svg" alt="CGAI Logo klein" height="24" />
+          <strong>CGAI</strong>
+        </div>
+        <p style="color:#A7B0BE;max-width:40ch">Klarheit & Disziplin für Entscheidungen im Kryptomarkt.</p>
+      </div>
+      <div>
+        <p class="kicker" style="color:#D4AF37;margin:0 0 6px">Navigation</p>
+        <p><a href="mindset.html">Mindset</a> • <a href="krypto.html">Krypto</a> • <a href="ueber-uns.html">Über uns</a></p>
+      </div>
+      <div>
+        <p class="kicker" style="color:#D4AF37;margin:0 0 6px">Rechtliches</p>
+        <p style="color:#A7B0BE;">© 2025 CGAI – Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
