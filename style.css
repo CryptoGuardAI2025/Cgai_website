@@ -1,0 +1,11 @@
+
+body {background:#0A0B0D;color:#fff;font-family:Arial,sans-serif;margin:0;padding:0;}
+header, footer {background:#0F1115;padding:1rem;text-align:center;}
+a {color:#4DA3FF;text-decoration:none;}
+h1,h2 {color:#D4AF37;}
+.container {max-width:1200px;margin:auto;padding:1rem;}
+nav a {margin:0 1rem;color:#fff;}
+section {padding:2rem 0;}
+.btn {background:#D4AF37;color:#0A0B0D;padding:0.5rem 1rem;border-radius:5px;}
+.chart-container {height:500px;}
+.product {border:1px solid #D4AF37;padding:1rem;margin:1rem 0;}
